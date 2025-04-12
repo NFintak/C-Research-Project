@@ -9,5 +9,8 @@
         <module name="JavaDemo" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="CSharpAndJava" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,4 +1,4 @@
-## Simple Java Demo
+## Simple Java DemoJava
 
 A short program showing some basic principles/methods as they're used in Java
 * For and while loops

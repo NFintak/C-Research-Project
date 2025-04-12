@@ -1,6 +1,4 @@
-package Demo;
-
-import java.util.ArrayList;
+package DemoJava;
 
 public class Main {
     public static void main(String[] args) {
