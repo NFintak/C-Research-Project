@@ -2,15 +2,12 @@ class Main:
     def __init__(self):
         pass
 
-
-
     def exponential(self, n):
         lista = [1, 2, 3, 4, 5, 6, 7, 8]
         list3 = []
         for i in lista:
             list3.append(i ** n)
         print(list3)
-
 
 
     def remove_odds(self):
@@ -21,17 +18,16 @@ class Main:
             print(lista)
 
 
-
     def reverse(self, a):
         print (a[::-1])
 
 
     def palindrome(self, value ):
-        sanitized_input = value.lower().replace(" ", "")
-        reversed_sanitized_input = reversed(sanitized_input)
+        clean_input = value.lower().replace(" ", "")
+        reversed_clean_input = reversed(clean_input)
 
-        a = list(sanitized_input)
-        b = list(reversed_sanitized_input)
+        a = list(clean_input)
+        b = list(reversed_clean_input)
 
         print (a == b)
 
