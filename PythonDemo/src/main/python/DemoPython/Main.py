@@ -31,17 +31,8 @@ class Main:
 
         print (a == b)
 
-    def greet(self, name):
-        """
-        This function receives a name parameter and utilizes it to print a greeting.
-        """
-        print("Hello, "+ name)
 
-    def name_input(self):
-        """
-        This function prompts the user for their name and returns the value provided by the user.
-        """
-        return input("What is your name?\n")
+
 
 
 
@@ -63,8 +54,3 @@ class Main:
 #demo_four = Main()
 #demo_four.palindrome('Dog')
 #demo_four.palindrome('Racecar')
-
-#greet
-#demo_five = Main()
-#name = demo_five.name_input()
-#demo_five.greet(name)
