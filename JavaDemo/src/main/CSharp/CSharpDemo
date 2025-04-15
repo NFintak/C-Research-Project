@@ -1,0 +1,64 @@
+//using classes from System
+using System;
+//namespace -> container for classes and other namespaces
+namespace CSharpDemo
+{
+    //class -> container for methods/data
+    class Program
+    {
+        //needs a Main method to run
+        static void Main(string[] args) {
+            fibSequenceForLoop(10);
+            fibSequenceWhileLoop(10);
+            stringUtils();
+        }
+        static void fibSequenceForLoop(int x) {
+            Console.Write("Fibonacci Sequence:");
+            int sum = 1;
+            int firstNum = 0;
+            int secondNum = 1;
+            for (int i = 0; i < x; i++) {
+                //writes to same line
+                Console.Write(" " + sum);
+                sum = firstNum + secondNum;
+                firstNum = secondNum;
+                secondNum = sum;
+            }
+            Console.Write(".\n");
+        }
+        static void fibSequenceWhileLoop(int x) {
+            int sum = 1;
+            int firstNum = 0;
+            int secondNum = 1;
+            int i = 0;
+            while (i < x) {
+                //writes on different line
+                Console.WriteLine(sum);
+                sum = firstNum + secondNum;
+                firstNum = secondNum;
+                secondNum = sum;
+                i++;
+            }
+        }
+        static void stringUtils() {
+            string[] languages = {"C#", "Java", "Python", "JavaScript"};
+            //constructs empty string arrays
+            string[] langsUpper = new string[4];
+            string[] langsLower = new string[languages.Length];
+            for (int i = 0; i < langsUpper.Length; i++) {
+                //makes string uppercase, adds string to array
+                langsUpper[i] = languages[i].ToUpper();
+            }
+            for (int i = 0; i < langsLower.Length; i++) {
+                //makes string lowercase, adds string to array
+                langsLower[i] = languages[i].ToLower();
+            }
+            for (int i = 0; i < languages.Length; i++) {
+                Console.Write(languages[i] + " ");
+                Console.Write(langsUpper[i] + " ");
+                Console.Write(langsLower[i] + "\n");
+            }
+        }
+    }
+}
+
